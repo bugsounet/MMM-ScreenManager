@@ -8,7 +8,7 @@ Automaticaly turn ON and Turn OFF your screen with defined hours
 Needed: MagicMirror v2.13.0 and above
 
 Clone the module into your MagicMirror module folder and execute `npm intall` in the module's directory.
-```
+```sh
 cd ~/MagicMirror/modules
 git clone https://github.com/bugsounet/MMM-ScreenManager.git
 cd MMM-ScreenManager
@@ -130,3 +130,14 @@ This is a quick reference to cron syntax
 | day of month |         1-31        |
 |     month    |     1-12 (or names) |
 |  day of week |     0-7 (or names, 0 or 7 are sunday)  |
+
+## Update
+
+  ```sh
+  cd ~/MagicMirror/modules/MMM-SpeedTest
+  git pull && npm install
+  ```
+
+## Donation
+
+[If you love my modules !](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TTHRH94Y4KL36&source=url) 
