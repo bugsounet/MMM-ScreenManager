@@ -38,7 +38,7 @@ module.exports = NodeHelper.create({
 
     /** npm library @bugsounet update checker **/
     if (this.config.NPMCheck.useChecker) {
-      var npmConfig = {
+      let npmConfig = {
         dirName: __dirname,
         moduleName: this.name,
         timer: this.getUpdateTime(this.config.NPMCheck.delay),
