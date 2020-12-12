@@ -76,7 +76,7 @@ You can also make a powerSaving mode with this feature
 `sleeping`: use this governor when the screen turn OFF<br>
 `working`: use this governor when the screen turn ON<br>
 
-### Field in `ON: []` et `OFF: []`
+### Field in `ON: []` and `OFF: []`
 
 This is the rule to Turn ON et Turn OFF your screen<br>
 You have make to script your rule in cron format<br>
