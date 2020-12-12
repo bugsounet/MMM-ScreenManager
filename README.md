@@ -131,6 +131,9 @@ This is a quick reference to cron syntax
 |     month    |     1-12 (or names) |
 |  day of week |     0-7 (or names, 0 or 7 are sunday)  |
 
+## Note
+You can verify your cron value with [this site](https://crontab.guru/) 
+
 ## Update
 
   ```sh
