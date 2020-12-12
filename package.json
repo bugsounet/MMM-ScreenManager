@@ -1,0 +1,20 @@
+{
+  "name": "MMM-ScreenManager",
+  "version": "0.0.1",
+  "description": "Screen Manager for MagicMirror",
+  "main": "MMM-ScreenManager.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bugsounet/MMM-ScreenManager"
+  },
+  "author": "@bugsounet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bugsounet/MMM-ScreenManager/issues"
+  },
+  "homepage": "https://github.com/bugsounet/MMM-ScreenManager",
+  "dependencies": {
+    "@bugsounet/screen": "^1.1.0",
+    "node-cron": "^2.0.3"
+  }
+}
