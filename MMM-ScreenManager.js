@@ -6,6 +6,7 @@
  */
 
 Module.register("MMM-ScreenManager", {
+  requiresVersion: "2.13.0",
   defaults: {
     debug: false,
     turnOnStart: true,
