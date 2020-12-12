@@ -18,7 +18,12 @@ Module.register("MMM-ScreenManager", {
       working: "ondemand"
     },
     ON: [],
-    OFF: []
+    OFF: [],
+    NPMCheck: {
+      useChecker: true,
+      delay: "45m",
+      useAlert: true
+    }
   },
 
   notificationReceived: function (notification, payload, sender) {
@@ -34,6 +39,21 @@ Module.register("MMM-ScreenManager", {
       case "SCREEN_PRESENCE":
         if (this.config.hideModules) this.HideShow(payload)
         this.sendNotification("USER_PRESENCE", payload)
+        break
+      case "NPM_UPDATE":
+        if (payload && payload.length > 0) {
+          if (this.config.NPMCheck.useAlert) {
+            payload.forEach(npm => {
+              this.sendNotification("SHOW_ALERT", {
+                type: "notification" ,
+                message: "[NPM] " + npm.library + " v" + npm.installed +" -> v" + npm.latest,
+                title: this.translate("UPDATE_NOTIFICATION_MODULE", { MODULE_NAME: npm.module }),
+                timer: this.getUpdateIntervalMillisecondFromString(this.config.NPMCheck.delay) - 2000
+              })
+            })
+          }
+          this.sendNotification("NPM_UPDATE", payload)
+        }
         break
     }
   },

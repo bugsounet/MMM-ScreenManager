@@ -14,8 +14,9 @@
   },
   "homepage": "https://github.com/bugsounet/MMM-ScreenManager",
   "dependencies": {
-    "@bugsounet/screen": "^1.1.0",
     "@bugsounet/governor": "^1.0.0",
+    "@bugsounet/npmcheck": "^0.9.9",
+    "@bugsounet/screen": "^1.1.0",
     "node-cron": "^2.0.3"
   }
 }
