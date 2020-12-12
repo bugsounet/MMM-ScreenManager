@@ -51,9 +51,9 @@ To use the module insert it in the config.js file. Here is an example:
 | turnOnStart| BOOLEAN| true
 | screenMode| NUMBER| 1
 
-`debug`: Activate debug mode
-`turnOnStart`: Turn On your screen on start (if needed)
-`screenMode`: Screen Manager mode
+`debug`: Activate debug mode<br>
+`turnOnStart`: Turn On your screen on start (if needed)<br>
+`screenMode`: Screen Manager mode<br>
 
  * Available mode:
    - `mode: 1` - use vgencmd (RPI only)
@@ -72,9 +72,9 @@ You can also make a powerSaving mode with this feature
 |sleeping| STRING| powersave
 |working| STRING| ondemand
 
-`useGovernor`: Activate CPU powersaving
-`sleeping`: use this governor when the screen turn OFF
-`working`: use this governor when the screen turn ON
+`useGovernor`: Activate CPU powersaving<br>
+`sleeping`: use this governor when the screen turn OFF<br>
+`working`: use this governor when the screen turn ON<br>
 
 ### Field in `ON: []` et `OFF: []`
 
