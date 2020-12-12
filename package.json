@@ -3,6 +3,9 @@
   "name": "MMM-ScreenManager",
   "version": "1.0.0",
   "description": "Screen Manager for MagicMirror",
+  "scripts": {
+    "preinstall": "installer/preinstall.sh"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/bugsounet/MMM-ScreenManager"
