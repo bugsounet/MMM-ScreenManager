@@ -142,6 +142,7 @@ This is a quick reference to cron syntax
 ## Notes
   - You can verify your cron value with [this site](https://crontab.guru/)
   - This module have no visual
+  - This module broadcast a `USER_PRESENCE` notification for other modules
 
 ## Update
 
