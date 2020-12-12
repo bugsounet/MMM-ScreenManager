@@ -91,8 +91,8 @@ I have set this rule for turn on screen:
         "0 8 * * 5"
       ],
 ```
-1st Rule: from Monday to jeudi at 07h45<br>
-2nd Rule: every vendredi at 08h00<br>
+1st Rule: from Monday to Thursday at 07h45<br>
+2nd Rule: every Friday at 08h00<br>
 
 I have set this rule for turn off screen:
 ```js
@@ -100,7 +100,7 @@ I have set this rule for turn off screen:
         "0 17 * * 0-5"
       ]
 ```
-1st Rule: from Monday to vendredi at 17h00
+1st Rule: from Monday to Friday at 17h00
 
 ## Cron Syntax
 
