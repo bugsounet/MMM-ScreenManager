@@ -55,7 +55,7 @@ To use the module insert it in the config.js file. Here is an example:
 `turnOnStart`: Turn On your screen on start (if needed)<br>
 `screenMode`: Screen Manager mode<br>
 
- * Available mode:
+ Available mode:
    - `mode: 1` - use vgencmd (RPI only)
    - `mode: 2` - use dpms (version RPI)
    - `mode: 3` - use tvservice (RPI only)
@@ -75,6 +75,13 @@ You can also make a powerSaving mode with this feature
 `useGovernor`: Activate CPU powersaving<br>
 `sleeping`: use this governor when the screen turn OFF<br>
 `working`: use this governor when the screen turn ON<br>
+
+Available governor:
+ * conservative
+ * ondemand
+ * userspace
+ * powersave
+ * performance
 
 ### Field in `ON: []` and `OFF: []`
 
