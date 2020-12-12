@@ -28,7 +28,7 @@ To use the module insert it in the config.js file. Here is an example:
       screenMode: 1,
       hideModules: true,
       governor: {
-        useGovernor: true,
+        useGovernor: false,
         sleeping: "powersave",
         working: "ondemand"
       },
