@@ -1,8 +1,6 @@
-# MMM-ScreenManager (available soon)
+# MMM-ScreenManager
 
 Automaticaly turn ON and Turn OFF your screen with defined hours
-
-![](https://raw.githubusercontent.com/bugsounet/coding/main/undercoding.gif)
 
 ## Installation
 Needed: MagicMirror v2.13.0 and above
@@ -141,8 +139,9 @@ This is a quick reference to cron syntax
 |     month    |     1-12 (or names) |
 |  day of week |     0-7 (or names, 0 or 7 are sunday)  |
 
-## Note
-You can verify your cron value with [this site](https://crontab.guru/) 
+## Notes
+  - You can verify your cron value with [this site](https://crontab.guru/)
+  - This module have no visual
 
 ## Update
 
