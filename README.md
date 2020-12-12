@@ -134,7 +134,7 @@ This is a quick reference to cron syntax
 ## Update
 
   ```sh
-  cd ~/MagicMirror/modules/MMM-SpeedTest
+  cd ~/MagicMirror/modules/MMM-ScreenManager
   git pull && npm install
   ```
 
