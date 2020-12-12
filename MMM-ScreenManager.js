@@ -7,9 +7,15 @@
 
 Module.register("MMM-ScreenManager", {
   defaults: {
-    debug: true,
+    debug: false,
     turnOnStart: true,
-    screenMode: 5,
+    screenMode: 1,
+    hideModules: true,
+    governor: {
+      useGovernor: false,
+      sleeping: "powersave",
+      working: "ondemand"
+    },
     ON: [],
     OFF: []
   },
@@ -25,8 +31,22 @@ Module.register("MMM-ScreenManager", {
   socketNotificationReceived: function (notification, payload) {
     switch (notification) {
       case "SCREEN_PRESENCE":
+        if (this.config.hideModules) this.HideShow(payload)
         this.sendNotification("USER_PRESENCE", payload)
         break
+    }
+  },
+
+  HideShow: function(show) {
+    if (this.config.debug) console.log("[MANAGER] " + (show ? "show": "hide") + " all modules")
+    if (show) {
+      MM.getModules().enumerate((module)=> {
+        module.show(1000, {lockString: "MANAGER_LOCK"})
+      })
+    } else {
+      MM.getModules().enumerate((module)=> {
+        module.hide(1000, {lockString: "MANAGER_LOCK"})
+      })
     }
   }
 });
