@@ -26,6 +26,7 @@ To use the module insert it in the config.js file. Here is an example:
       debug: false,
       turnOnStart: true,
       screenMode: 1,
+      hideModules: true,
       governor: {
         useGovernor: true,
         sleeping: "powersave",
@@ -50,17 +51,19 @@ To use the module insert it in the config.js file. Here is an example:
 | debug| BOOLEAN| false
 | turnOnStart| BOOLEAN| true
 | screenMode| NUMBER| 1
+| hideModules| BOOLEAN| true
 
 `debug`: Activate debug mode<br>
 `turnOnStart`: Turn On your screen on start (if needed)<br>
 `screenMode`: Screen Manager mode<br>
+`hideModules`: Hide all modules before turn off screen 
 
- Available mode:
-   - `mode: 1` - use vgencmd (RPI only)
-   - `mode: 2` - use dpms (version RPI)
-   - `mode: 3` - use tvservice (RPI only)
-   - `mode: 4` - use HDMI CEC
-   - `mode: 5` - use dpms (linux version for debian, ubuntu, ...)
+ Available `screenMode`:
+   - `screenMode: 1` - use vgencmd (RPI only)
+   - `screenMode: 2` - use dpms (version RPI)
+   - `screenMode: 3` - use tvservice (RPI only)
+   - `screenMode: 4` - use HDMI CEC
+   - `screenMode: 5` - use dpms (linux version for debian, ubuntu, ...)
 
 ### Field in `governor: {}`
 
