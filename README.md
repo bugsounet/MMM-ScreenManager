@@ -150,6 +150,8 @@ This is a quick reference to cron syntax
   cd ~/MagicMirror/modules/MMM-ScreenManager
   git pull && npm install
   ```
+## Support and Helping
+Support is now on [the 4th Party Modules Forum](http://forum.bugsounet.fr)
 
 ## Donation
 
