@@ -37,6 +37,9 @@ fi
 
 echo
 
+# Go to root of module
+cd ..
+
 # switch branch
 Installer_info "Installing Sources..."
 git checkout -f master 2>/dev/null || Installer_error "Installing Error !"
